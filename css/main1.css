@@ -1,0 +1,51 @@
+body {
+    background-color:lightgoldenrodyellow;
+}
+table {
+ table-layout:auto;/*自動延伸*/
+ width:800px;
+ border:5px rebeccapurple solid;
+ border-collapse:separate;
+ border-spacing:0px;
+ margin-left:200px;
+}
+
+th {
+background-color:orangered;
+font-size:30px;
+color:blue;
+}
+td:nth-of-type(2n+1){
+background-color:yellow;
+border-left:5px rgb(255, 0, 157) solid;
+border-top:rebeccapurple 5px solid;
+border-bottom:royalblue 5px solid;
+border-right:seagreen 5px solid;
+text-align:center;
+padding-top:20px;
+padding-bottom:20px;
+font-size:25px;
+/*line height:50px; 行高*/
+}
+
+td:nth-of-type(2n){
+background-color:yellowgreen;
+border-left:5px rgb(255, 0, 157) solid;
+border-top:rebeccapurple 5px solid;
+border-bottom:royalblue 5px solid;
+border-right:seagreen 5px solid;
+text-align:center;
+padding-top:20px;
+padding-bottom:20px;
+font-size:25px;
+/*line height:50px; 行高*/
+}
+
+
+tr td:nth-child(6){
+*white-space:nowrap; /*指定不換行*/
+        }
+
+th:nth-child(1),th:nth-child(2), th:nth-child(3){
+width:150px;
+}

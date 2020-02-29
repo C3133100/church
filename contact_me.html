@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="main.css" type="text/CSS" rel="stylesheet" />
+    <title>聯絡我</title>
+    
+  </head>
+  <body>
+     <!--表單標題開始-->
+     <h1 class="text-center mt-5">聯絡我</h1>
+     <div class="container">
+     
+      <!-- 表單返回頁，記得在表單加「 target='returnWin' 」 -->
+      <iframe name="returnWin" style="display: none;" onload="this.onload=function(){window.location='<{xoAppUrl}>restore.html'}"></iframe>
+         
+         <!--表單問題中的傳送碼-->
+         <form target='returnWin' role="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScRCY6yZfpbCPisIsTIlGZNsoD5sU6b3rTqTjiqbaGfvsekvQ/formResponse" method="post" id="myForm">
+             <div class="row">  
+             
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label><span class="title">姓名</span><span class="text-primary">*(請填您的稱呼)</span></label>
+                    <input type="text" class="form-control" name="entry.1060848100" id="1060848100" maxlength="6" />
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label><span class="title">電話</span><span class="text-primary">*(請填連絡電話)</span></label>
+                    <input type="tel" class="form-control" name="entry.1678241233" id="1678241233" placeholder ="格式０９ＸＸＸＸＸＸＸＸ"  minlength="7" maxlength="14">
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <label><span class="title">網址</span><span class="text-primary">*(請填聯繫網址)</span></label>
+                    <input type="email" class="form-control" name="entry.856472878" id="856472878"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="control-label">聯絡事項</label>
+                    <textarea class="form-control" rows="3" name="entry.606368931" id="606368931"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pb-3">
+            <button type="submit" class="btn btn-primary">送出</button>
+          
+        </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
+    <!-- 表單驗證 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+  
+	<script>
+		$(function(){
+      		$("#myForm").validate({
+        	submitHandler: function(form) {
+          	form.submit();
+        	},
+          
+          rules: {
+            'entry.1060848100' : {
+              required: true
+          },
+          'entry.1678241233' : {
+              required: true
+          },
+          'entry.856472878' : {
+              required: true,
+              email : true
+          }
+        },
+
+        messages: {
+          'entry.1060848100' : {
+            required: "必填"
+          },
+          'entry.1678241233' : {
+            required: "必填"
+          },
+          'entry.856472878' : {
+            required: "必填",
+            email : "請填正確email格式"
+          }
+        }
+      });
+    });
+  
+			
+			
+			
+			
+			
+			</script>
+ 
+    </body>
+</html>
+

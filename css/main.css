@@ -1,0 +1,195 @@
+body {
+    background: linear-gradient(90deg, rgba(235, 231, 4, 0.548) 0%, rgba(19, 124, 45, 0.486) 35%, rgb(255, 123, 0) 100%);
+    
+}
+.error{
+    color:red;
+}
+
+.form-group {
+    border: 1px solid rgba(244, 244, 248, 0.089);
+    font-weight:900;
+    font-size:20px;
+  
+}
+.form-group img{
+
+    width: 200px;
+    height:200px; 
+    margin-left:30px;
+    border:5px solid royalblue;
+    transform:scale(1,1);transition: all 1s ease-out;
+}
+
+.form-group img:hover{transform:scale(1.2,1.2);
+}
+
+.form-control{
+    height:40px; 
+    width:100%;
+}
+
+.form-control:hover{
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+    background-color:#5599FF;
+
+}
+
+
+
+h1{ 
+    
+    font-weight:900;
+    color:rgb(199, 12, 199);
+}
+
+body img{
+    margin-left:auto;
+    margin-right:auto;        
+}
+.card{
+ border: 5px solid darkslateblue;
+
+
+}
+.card-header{
+
+    background-color: darkorchid;
+    font-size:25px;
+}
+
+.list-group-item{
+    background-color: palevioletred;
+     color: darkblue;
+     font-weight:800;
+     font-size:20px;
+
+}
+
+.table {
+    display: table;
+    table-layout:auto;/*自動延伸*/
+         width:800px;
+         border:5px rebeccapurple solid;
+         border-collapse:separate;
+         border-spacing:0px;
+         font-size:18px;
+         margin-top:50px;
+  }
+  th{
+    background-color:yellow;
+   
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+    /*line height:50px; 行高*/
+}
+
+td{
+
+    background-color:lightblue;
+    
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 0 auto;
+}   
+
+.box{
+    margin-top:100px;
+    color:rgb(3, 3, 240);
+}
+
+.container_picture img{
+
+   
+        width:600px;
+        height:auto;
+        margin-left:250px;
+        margin-bottom:50px;
+        border:5px solid orangered;
+        transform:scale(1,1);transition: all 1s ease-out;
+    }
+    
+.container_picture img:hover{transform:scale(1.2,1.2);
+    }
+
+    #context{
+        background-color:rgba(0, 132, 255, 0.452);
+       clear:both; /*清除浮動的影響*/
+       width:800px;
+       text-align:justify;
+       margin-left:auto;
+       margin-right:auto;
+       font-size: 30px;   
+       /*columns:auto 2; 欗框 欄數*/
+       /*columns:100px auto;*/
+       column-count:3; /*欄位數量*/
+       column-gap:30px; /*欄位間隔*/ 
+       column-rule-width:2px;
+       column-rule-color:#999;
+       column-rule-style:dotted;
+       
+       background:-webkit-gradient(radial,50% 30%,20,50% 20%,60,from(crimson),to(rgba(255, 136, 0, 0.322)),color-stop(50%,rgba(0, 0, 255, 0.301)));
+       /*webkit-gradient(種類 開始位置xy 起始半徑 終點xy 終點半徑 from顏色顏色 color-stop(位置 顏色)*/
+       /*background:-webkit-linear-gradient(top,rgb(255, 0, 157),rgb(0, 255, 98)); */
+   }
+   
+   
+   /*i.fab{
+   
+       font-size:80px;
+       color:floralwhite;
+       display:block; /*block(框與框上下堆疊)、inline(具有箱型屬性)、inline-block(框與框左右堆疊)、none、list_item最常用 */
+   /*	float:left;
+       visibility: hidden;
+   }*/
+   
+   /*#context img{
+   width:10px;
+   height:auto ;
+   vertical-align: text-top;
+   
+   }*/
+   #context p{
+       font-family: 'Courier New', Courier, monospace;
+       color:black;
+       font-size:18px;
+   }
+   #context h1+p:first-letter{
+       color:blue;
+       font-size:50px;
+       float:left;
+       display:inline-block; 
+       margin-right:10px;
+   }
+   
+   #context p:first-line{
+       color:blue;
+   }
+
+
+   #context h1{
+       font-family:'Times New Roman', Times, serif; 
+       color:yellow;
+       font-size:24px;
+       column-span:all; /*只有兩個值1(一個欄位) or all(橫跨欄位)*/
+       background-color:#39C;
+       counter-increment:h1_counter 1;
+   
+   }
+   #context h1::before{
+       /*color:borwn;
+       font-size:20px;
+       content:"*'\'";*/
+       /*content:url("img/Yh7Uy0rn7j.jpg");*/
+       content:counter(h1_counter,upper-alpha)". ";
+       /*check list style type on web 用來指定清單*/
+   }
+   
+ 
